@@ -1,0 +1,8 @@
+
+ <% @posts.each do |post| %>
+ <%= image_tag post.pic, width: "150px"%>
+ <p> <%= post.caption %> </p>
+  <%= button_to 'LIKE!', {:controller => "likes", :action => "create", :post_id => post.id}, :method => :post %>
+ <% end %>
+ 
+ <p>@post.caption %> </p>
